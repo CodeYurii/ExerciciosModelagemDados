@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Hospedagem associada a funcionarios" directorySegmentName="seg_0" id="40D89EC4-10A9-1BB5-918E-75108EAA25ED">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:37:06 UTC</createdTime>
+<comment><![CDATA[ Este relacionamento indica que uma hospedagem está associada a um único funcionário e que um funcionário realiza uma única hospedagem.]]></comment>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="CD6C04A4-46A5-FDFD-314F-75E9D6F9436E" value="true"/>
+</engineerTo>
+<sourcePk>68C50FC6-9E56-5D0C-0DD4-16BA5DD77B2B</sourcePk>
+<targetPk>CA289213-04B1-B7E7-6B19-A0FEB7F26CD4</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0FD13A9D-ABEF-9C42-3D3A-CED00ABFF4DC</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>4E8F6806-75D5-55C5-0630-3FFBE271BE45</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

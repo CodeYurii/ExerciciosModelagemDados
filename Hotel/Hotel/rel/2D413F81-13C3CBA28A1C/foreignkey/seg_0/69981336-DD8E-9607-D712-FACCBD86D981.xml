@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="69981336-DD8E-9607-D712-FACCBD86D981" containerWithKeyObject="04D0DC58-99AC-AEF5-D9D3-7FFD3D43EF70" localFKIndex="8DCCD39A-C52D-E567-342F-A4A07BF1F56A" name="CARGOS_FUNCIONARIOS_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[ Este relacionamento indica que cada funcionário está associado a um único cargo. Cada cargo pertence a um único funcionário.]]></comment>
+<generatorID>731B508D-0D62-8C92-DCB5-7D1BBF9394F1</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<referredTableLongName>FUNCIONARIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>31E2E747-B181-9905-DE74-9819EF569090</referredTableID>
+<keyObject>64BAC8D6-5CA0-4D82-D02C-F3CA605ED4DC</keyObject>
+<referredKeyID>64BAC8D6-5CA0-4D82-D02C-F3CA605ED4DC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_funcionario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="407898F4-F926-2DBB-58AC-5DD20D26B5DF" name="VENDAS">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[Esta entidade representa as vendas de produtos ou serviços realizadas aos hóspedes pelo hotel.]]></comment>
+<generatorID>BB7C8EE6-C0E1-40BC-E27B-25B036FC95F3</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_venda" id="615E629A-534E-FAD0-6E5C-5250D3531FDF">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Identificador único para cada venda.]]></commentInRDBMS>
+<generatorID>26CBA6B3-8D92-F4A3-2F7B-8BB09B2DAD05</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_venda" id="2A9647E0-283D-B397-05EA-CAC56CA4540F">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor total da venda.]]></commentInRDBMS>
+<generatorID>84CFF1DD-8FA0-20F0-3792-9348584E310B</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,2,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOSPEDES_ID_hospede" id="EC4B7CD1-5C4C-9A14-90CC-7CBBD9AA771D">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>81E6E726-F1C8-C4C4-41C9-D4C8F83A6BDA</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90066A3A-39C0-FFAF-A7D8-C44D29BE0FB3" referredColumn="94111FB3-EC25-5BC6-ECCE-A49E938E0CD3"/>
+</associations>
+</Column>
+<Column name="FUNCIONARIOS_ID_funcionario" id="6E76FA7E-1612-4B0D-8CC9-F351E2E33E77">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>D0F42CFA-429D-3FC3-52EE-0A68E183311E</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5566F0AE-6251-196F-7429-444CF6CDB9EB" referredColumn="9E4733B1-5C2F-B98B-125A-B25A46C7AE3B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D7D3889-F920-A79B-C801-57583C118298" name="VENDAS_PK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>E09ABE05-CAFA-987E-EE33-CD70A9C49220</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="615E629A-534E-FAD0-6E5C-5250D3531FDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CC8C379-86CA-5397-E54C-2FE3CB70B8AA" name="VENDAS_HOSPEDES_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>A122493D-E482-6660-9455-DDFCAC579C88</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC4B7CD1-5C4C-9A14-90CC-7CBBD9AA771D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B41F28FF-8A14-0282-4528-291CA03460FF" name="VENDAS_FUNCIONARIOS_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>09CF135F-CD38-BEC0-0BAE-B36D9845D76F</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E76FA7E-1612-4B0D-8CC9-F351E2E33E77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

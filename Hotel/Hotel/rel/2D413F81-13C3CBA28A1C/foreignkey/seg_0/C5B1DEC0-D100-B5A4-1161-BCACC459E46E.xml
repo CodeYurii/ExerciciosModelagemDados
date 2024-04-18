@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C5B1DEC0-D100-B5A4-1161-BCACC459E46E" containerWithKeyObject="04D0DC58-99AC-AEF5-D9D3-7FFD3D43EF70" localFKIndex="2F69E5A1-8C28-B3A7-B7B0-C9A8E4084981" name="CARGOS_PERMISSOES_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[Este relacionamento indica que cada cargo possui apenas uma permissão associada, enquanto cada permissão está vinculada muitos cargos.]]></comment>
+<generatorID>2E5F4461-1D4A-2A81-69CE-4B118BED9546</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<referredTableLongName>PERMISSOES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>71805023-B64C-EC4F-855D-EFE67F250B77</referredTableID>
+<keyObject>070B5BBF-EA4B-1890-048D-B9B08A7D9522</keyObject>
+<referredKeyID>070B5BBF-EA4B-1890-048D-B9B08A7D9522</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_permissao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

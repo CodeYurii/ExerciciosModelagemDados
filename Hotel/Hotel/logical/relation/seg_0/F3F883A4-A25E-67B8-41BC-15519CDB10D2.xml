@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Hospedagens possui hospedes" directorySegmentName="seg_0" id="F3F883A4-A25E-67B8-41BC-15519CDB10D2">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:33:57 UTC</createdTime>
+<comment><![CDATA[Este relacionamento indica que uma hospedagem está associada a um único hóspede e que um hóspede pertence a uma única hospedagem.]]></comment>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="CD6C04A4-46A5-FDFD-314F-75E9D6F9436E" value="true"/>
+</engineerTo>
+<sourcePk>68C50FC6-9E56-5D0C-0DD4-16BA5DD77B2B</sourcePk>
+<targetPk>442765C5-156C-4E54-701A-1B8129B8D735</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0FD13A9D-ABEF-9C42-3D3A-CED00ABFF4DC</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>03784B9D-FA2B-23F2-688F-CF194AFD12CD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
