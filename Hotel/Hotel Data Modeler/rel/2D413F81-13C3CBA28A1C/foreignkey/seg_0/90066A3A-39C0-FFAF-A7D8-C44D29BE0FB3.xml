@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="90066A3A-39C0-FFAF-A7D8-C44D29BE0FB3" containerWithKeyObject="407898F4-F926-2DBB-58AC-5DD20D26B5DF" localFKIndex="9CC8C379-86CA-5397-E54C-2FE3CB70B8AA" name="VENDAS_HOSPEDES_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[Este relacionamento indica que um hóspede pode ter várias vendas associadas a ele, mas também pode não ter nenhuma. Cada venda pertence a um único hóspede.]]></comment>
+<generatorID>A122493D-E482-6660-9455-DDFCAC579C88</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<referredTableLongName>HOSPEDES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F732E80D-9272-CE2B-8823-CECE301104FF</referredTableID>
+<keyObject>FE74656B-CE72-76A0-7A8F-B29A674A7D00</keyObject>
+<referredKeyID>FE74656B-CE72-76A0-7A8F-B29A674A7D00</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_hospede</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

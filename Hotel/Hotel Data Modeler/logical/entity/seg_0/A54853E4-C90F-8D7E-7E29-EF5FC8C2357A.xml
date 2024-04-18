@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A54853E4-C90F-8D7E-7E29-EF5FC8C2357A" name="QUARTOS">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:07:07 UTC</createdTime>
+<comment><![CDATA[Esta entidade representa os quartos disponíveis no hotel para hospedagem.]]></comment>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_quarto" id="4F2F9953-0313-4C86-2C44-E1A09FBB41D3">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:07:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Identificador único para cada quarto.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_quarto" id="AA490AAE-9B47-7310-AE48-EDBCB3F9AC6E">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:08:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica o status atual do quarto (ocupado, disponível, em manutenção, etc.).]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_quarto" id="A748934B-AFB6-718B-7EF0-A617D30C87F9">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:08:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo ou categoria do quarto (standard, luxo, suíte, etc.).]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_hospedagem" id="448CB495-6C95-2159-CF85-620999AE0930">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:35:30 UTC</createdTime>
+<generatorID>144F6521-4413-E9A6-E434-335A3C1366D0</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<referedAttribute>55866C97-5D7E-6932-5F7F-67734B498F92</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="25C5384E-C4DF-D9BB-DA02-A38C67225BB4" name="QUARTOS PK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:08:09 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4F2F9953-0313-4C86-2C44-E1A09FBB41D3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

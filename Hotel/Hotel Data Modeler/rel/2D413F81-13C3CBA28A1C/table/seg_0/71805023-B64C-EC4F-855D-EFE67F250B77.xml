@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71805023-B64C-EC4F-855D-EFE67F250B77" name="PERMISSOES">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[Esta entidade representa as permissões de acesso ao sistema para os funcionários do hotel.]]></comment>
+<generatorID>45593151-9160-1879-62BC-E984F0AC99AE</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_permissao" id="F7EA9BA3-EFCD-A1F4-5F57-9D0E596BC012">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Identificador único para cada permissão.]]></commentInRDBMS>
+<generatorID>989EA1AF-6911-3D63-1314-97C05DEF0692</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_permissao" id="C3E2BCB5-689A-807C-2AE8-633AAF4ED811">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Nome da permissão.]]></commentInRDBMS>
+<generatorID>C03C5589-4452-F0C9-D95E-3592F6EB1560</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="070B5BBF-EA4B-1890-048D-B9B08A7D9522" name="PERMISSOES_PK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>BEAA0036-AE49-020A-E0FE-0E795638CC8C</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7EA9BA3-EFCD-A1F4-5F57-9D0E596BC012"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

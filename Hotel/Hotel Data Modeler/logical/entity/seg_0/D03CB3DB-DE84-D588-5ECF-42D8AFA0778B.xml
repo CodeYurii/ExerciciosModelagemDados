@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D03CB3DB-DE84-D588-5ECF-42D8AFA0778B" name="TURNOS">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:24:24 UTC</createdTime>
+<comment><![CDATA[Esta entidade representa os turnos de trabalho dos funcionários no hotel.]]></comment>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_turno" id="C200FC00-2F1B-B00F-926B-6B23A314C36A">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:25:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único para cada turno.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="periodo_turno" id="ED056DD6-F35C-B1A7-EFA6-910B2937DF89">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:26:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Período ou horário do turno de trabalho.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_supervisor" id="BA798900-EDEE-6D83-5362-B0F3839CF609">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:02:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do supervisor]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D6CF8FE8-F050-4D05-C434-BEB9F764E440" name="TURNOS PK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:26:19 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C200FC00-2F1B-B00F-926B-6B23A314C36A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

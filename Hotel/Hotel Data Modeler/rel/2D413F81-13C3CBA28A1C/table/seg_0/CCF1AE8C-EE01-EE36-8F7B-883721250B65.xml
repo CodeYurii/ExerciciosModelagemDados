@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCF1AE8C-EE01-EE36-8F7B-883721250B65" name="TURNOS">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[Esta entidade representa os turnos de trabalho dos funcionários no hotel.]]></comment>
+<generatorID>D03CB3DB-DE84-D588-5ECF-42D8AFA0778B</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_turno" id="DFBD93A5-7503-BAE7-867B-E1562726C2C5">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único para cada turno.]]></commentInRDBMS>
+<generatorID>C200FC00-2F1B-B00F-926B-6B23A314C36A</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="periodo_turno" id="81D27481-FACD-4C9F-811B-6233A4D5E4BA">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Período ou horário do turno de trabalho.]]></commentInRDBMS>
+<generatorID>ED056DD6-F35C-B1A7-EFA6-910B2937DF89</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_supervisor" id="C3296BF3-4F46-236F-4557-351CE05A8B80">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do supervisor]]></commentInRDBMS>
+<generatorID>BA798900-EDEE-6D83-5362-B0F3839CF609</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB4A1E46-2FE4-BCB9-BB1B-AB51F126A194" referredColumn="9E4733B1-5C2F-B98B-125A-B25A46C7AE3B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3EC49A0C-0D29-62CF-3644-9159DF4001C3" name="TURNOS_PK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>D6CF8FE8-F050-4D05-C434-BEB9F764E440</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFBD93A5-7503-BAE7-867B-E1562726C2C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82B24FAB-0D65-7378-1E61-18BF981C1294" name="TURNOS_FUNCIONARIOS_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:33:46 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3296BF3-4F46-236F-4557-351CE05A8B80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

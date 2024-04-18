@@ -1,0 +1,230 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31E2E747-B181-9905-DE74-9819EF569090" name="FUNCIONARIOS">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[Esta entidade representa os funcionários do hotel, que desempenham diversas funções.]]></comment>
+<generatorID>4E8F6806-75D5-55C5-0630-3FFBE271BE45</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_funcionario" id="9E4733B1-5C2F-B98B-125A-B25A46C7AE3B">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Identificador único para cada funcionário.]]></commentInRDBMS>
+<generatorID>50BBF918-70E7-8062-A6EC-664C9D0C911C</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_funcionario" id="FDE09C4D-4F0B-3C08-2351-E3255E664313">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do funcionário.]]></commentInRDBMS>
+<generatorID>D20335C9-ECA8-C6D4-F6E0-E23E6BCF4A57</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_nascimento_funcionario" id="DF9D88BD-A809-4522-F43B-83AD20A07AAB">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento do funcionário.]]></commentInRDBMS>
+<generatorID>A00CE009-811C-4BF6-74AC-AEC4A279D4F1</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cpf_funcionario" id="A1F60087-8B5C-DB07-CC4C-9089981BE9D5">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[CPF do funcionário.]]></commentInRDBMS>
+<generatorID>372A6442-C76D-6E44-0B20-C16C20853698</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_contratacao" id="D0DFDB87-E827-A5BE-BB24-D5ACA1408A6D">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de contratação do funcionário.]]></commentInRDBMS>
+<generatorID>EF5C0F0C-EEE3-8DF1-CD72-BA565F6377D6</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_desligamento" id="0C50CAA8-A9CB-657D-866A-166F62AFC25C">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de desligamento do funcionário, se aplicável.]]></commentInRDBMS>
+<generatorID>36ED20FC-9B3B-A29E-4F4E-18B97EE6958A</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salario_funcionario" id="D66832CD-3C45-E36B-BB19-3598BAD5A8F7">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salário do funcionário.]]></commentInRDBMS>
+<generatorID>4B5C7872-EA06-C49C-7DAC-96735918CCFF</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,2,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_funcionario" id="15970EFB-7819-E362-9F8C-AC1F2B38CD97">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do funcionário (ativo/inativo).]]></commentInRDBMS>
+<generatorID>3917914E-BC1E-FAE1-35EE-66C8AEA47F57</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOSPEDAGENS_ID_hospedagem" id="B591DFA9-9620-AE1D-A3A5-7BCE1055FB47">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>06A9F66D-5F88-566B-99D2-643ABC29738A</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDF97AB4-1A50-75B1-BE2B-636A4AEEB197" referredColumn="D275C0E5-40D1-8F4F-DB6F-772ADEA8DA51"/>
+</associations>
+</Column>
+<Column name="CARGOS_ID_cargo" id="366515DD-DAD6-BD09-8D10-E5786079BF32">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>0EB84B12-D4BC-1BDC-9744-D9C2D21C18C6</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C85E09A-77CD-A57A-F4A5-E4273ECA08C2" referredColumn="0D71FA6F-1AA0-E07A-23BF-DC1E88E5EEAF"/>
+</associations>
+</Column>
+<Column name="TURNOS_ID_turno" id="0FC6B0C7-37D1-72AB-FA01-3226F1E63DA9">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>B9F6FAA4-E269-CC99-8627-698BEA06A775</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51CFE21F-E53A-65F8-D1C5-6789766758E3" referredColumn="DFBD93A5-7503-BAE7-867B-E1562726C2C5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64BAC8D6-5CA0-4D82-D02C-F3CA605ED4DC" name="FUNCIONARIOS_PK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>CA289213-04B1-B7E7-6B19-A0FEB7F26CD4</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E4733B1-5C2F-B98B-125A-B25A46C7AE3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="781D7229-256C-00D9-6168-D5866C2FDAEA" name="FUNCIONARIOS__IDX">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>731B508D-0D62-8C92-DCB5-7D1BBF9394F1</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="366515DD-DAD6-BD09-8D10-E5786079BF32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EEC064A2-D08D-0FED-564E-06D9BCF6EBF0" name="FUNCIONARIOS__IDXv1">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>40D89EC4-10A9-1BB5-918E-75108EAA25ED</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B591DFA9-9620-AE1D-A3A5-7BCE1055FB47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02125BE4-1D47-E0AF-791A-0FF9F8CFDDFD" name="FUNCIONARIOS_CARGOS_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>731B508D-0D62-8C92-DCB5-7D1BBF9394F1</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="366515DD-DAD6-BD09-8D10-E5786079BF32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DA2AC64-673F-96BB-8F08-70D4FE95F87E" name="FUNCIONARIOS_TURNOS_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>A9B28CC7-0820-1772-BE28-B6FA788A6F9A</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FC6B0C7-37D1-72AB-FA01-3226F1E63DA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BD149D9-47F9-7764-8910-BC12FC3964BB" name="FUNCIONARIOS_HOSPEDAGENS_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>40D89EC4-10A9-1BB5-918E-75108EAA25ED</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B591DFA9-9620-AE1D-A3A5-7BCE1055FB47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

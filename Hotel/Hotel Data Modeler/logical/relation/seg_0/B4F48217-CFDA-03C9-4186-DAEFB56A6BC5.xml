@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Vendas possui produtoservicos" directorySegmentName="seg_0" id="B4F48217-CFDA-03C9-4186-DAEFB56A6BC5">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:40:37 UTC</createdTime>
+<comment><![CDATA[ Este relacionamento indica que uma venda pode estar associada a um ou vários produtos ou serviços. Cada produto ou serviço pertence a uma única venda.]]></comment>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="CD6C04A4-46A5-FDFD-314F-75E9D6F9436E" value="true"/>
+</engineerTo>
+<sourcePk>E09ABE05-CAFA-987E-EE33-CD70A9C49220</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BB7C8EE6-C0E1-40BC-E27B-25B036FC95F3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E7801B13-F85C-1C76-A07C-702F34AB14B7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

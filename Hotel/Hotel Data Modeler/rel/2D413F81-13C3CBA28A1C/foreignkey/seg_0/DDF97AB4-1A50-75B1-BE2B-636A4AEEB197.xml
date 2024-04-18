@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DDF97AB4-1A50-75B1-BE2B-636A4AEEB197" containerWithKeyObject="31E2E747-B181-9905-DE74-9819EF569090" localFKIndex="5BD149D9-47F9-7764-8910-BC12FC3964BB" name="FUNCIONARIOS_HOSPEDAGENS_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[ Este relacionamento indica que uma hospedagem está associada a um único funcionário e que um funcionário realiza uma única hospedagem.]]></comment>
+<generatorID>40D89EC4-10A9-1BB5-918E-75108EAA25ED</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<referredTableLongName>HOSPEDAGENS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A0265968-1603-4B81-FE68-11AEEA934371</referredTableID>
+<keyObject>1A968464-0A68-8DEE-4BD4-1D34FA4A6210</keyObject>
+<referredKeyID>1A968464-0A68-8DEE-4BD4-1D34FA4A6210</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_hospedagem</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

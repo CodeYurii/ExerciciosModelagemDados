@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E8F6806-75D5-55C5-0630-3FFBE271BE45" name="FUNCIONARIOS">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:16:04 UTC</createdTime>
+<comment><![CDATA[Esta entidade representa os funcionários do hotel, que desempenham diversas funções.]]></comment>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_funcionario" id="50BBF918-70E7-8062-A6EC-664C9D0C911C">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:16:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Identificador único para cada funcionário.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_funcionario" id="D20335C9-ECA8-C6D4-F6E0-E23E6BCF4A57">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:16:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do funcionário.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_nascimento_funcionario" id="A00CE009-811C-4BF6-74AC-AEC4A279D4F1">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:17:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento do funcionário.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cpf_funcionario" id="372A6442-C76D-6E44-0B20-C16C20853698">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:19:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[CPF do funcionário.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_contratacao" id="EF5C0F0C-EEE3-8DF1-CD72-BA565F6377D6">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:20:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de contratação do funcionário.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_desligamento" id="36ED20FC-9B3B-A29E-4F4E-18B97EE6958A">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:21:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de desligamento do funcionário, se aplicável.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salario_funcionario" id="4B5C7872-EA06-C49C-7DAC-96735918CCFF">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:21:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salário do funcionário.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,2,8</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_funcionario" id="3917914E-BC1E-FAE1-35EE-66C8AEA47F57">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:22:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do funcionário (ativo/inativo).]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_hospedagem" id="06A9F66D-5F88-566B-99D2-643ABC29738A">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:37:06 UTC</createdTime>
+<generatorID>40D89EC4-10A9-1BB5-918E-75108EAA25ED</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<referedAttribute>55866C97-5D7E-6932-5F7F-67734B498F92</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_cargo" id="0EB84B12-D4BC-1BDC-9744-D9C2D21C18C6">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:42:09 UTC</createdTime>
+<generatorID>731B508D-0D62-8C92-DCB5-7D1BBF9394F1</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<referedAttribute>BC09CD8A-4CD8-9763-5AB1-1809427C614B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_turno" id="B9F6FAA4-E269-CC99-8627-698BEA06A775">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:43:14 UTC</createdTime>
+<generatorID>A9B28CC7-0820-1772-BE28-B6FA788A6F9A</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<referedAttribute>C200FC00-2F1B-B00F-926B-6B23A314C36A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CA289213-04B1-B7E7-6B19-A0FEB7F26CD4" name="FUNCIONARIOS PK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:16:28 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>50BBF918-70E7-8062-A6EC-664C9D0C911C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

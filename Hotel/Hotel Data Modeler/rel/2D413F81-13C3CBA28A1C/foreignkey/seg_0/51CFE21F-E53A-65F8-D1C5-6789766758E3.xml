@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="51CFE21F-E53A-65F8-D1C5-6789766758E3" containerWithKeyObject="31E2E747-B181-9905-DE74-9819EF569090" localFKIndex="2DA2AC64-673F-96BB-8F08-70D4FE95F87E" name="FUNCIONARIOS_TURNOS_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[ Este relacionamento indica que cada funcionário está associado a um único turno de trabalho. Cada turno é compartilhado por muitos funcionários.]]></comment>
+<generatorID>A9B28CC7-0820-1772-BE28-B6FA788A6F9A</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<referredTableLongName>TURNOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CCF1AE8C-EE01-EE36-8F7B-883721250B65</referredTableID>
+<keyObject>3EC49A0C-0D29-62CF-3644-9159DF4001C3</keyObject>
+<referredKeyID>3EC49A0C-0D29-62CF-3644-9159DF4001C3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_turno</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

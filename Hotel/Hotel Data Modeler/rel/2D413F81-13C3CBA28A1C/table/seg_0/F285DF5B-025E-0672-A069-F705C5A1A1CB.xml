@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F285DF5B-025E-0672-A069-F705C5A1A1CB" name="QUARTOS">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[Esta entidade representa os quartos disponíveis no hotel para hospedagem.]]></comment>
+<generatorID>A54853E4-C90F-8D7E-7E29-EF5FC8C2357A</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_quarto" id="9A965EAD-F587-7AF5-D7EC-E733FC7C2C27">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Identificador único para cada quarto.]]></commentInRDBMS>
+<generatorID>4F2F9953-0313-4C86-2C44-E1A09FBB41D3</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_quarto" id="A83F8BD6-1F31-DB3F-F560-0BADA70B7539">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica o status atual do quarto (ocupado, disponível, em manutenção, etc.).]]></commentInRDBMS>
+<generatorID>AA490AAE-9B47-7310-AE48-EDBCB3F9AC6E</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_quarto" id="64AB11D9-34A6-AEB0-17C0-352BE5CE55AD">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo ou categoria do quarto (standard, luxo, suíte, etc.).]]></commentInRDBMS>
+<generatorID>A748934B-AFB6-718B-7EF0-A617D30C87F9</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOSPEDAGENS_ID_hospedagem" id="CA79D19B-DF4C-257F-2ADF-8451461C7568">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>448CB495-6C95-2159-CF85-620999AE0930</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83991CB2-B166-00E5-F845-273C6F83F4F6" referredColumn="D275C0E5-40D1-8F4F-DB6F-772ADEA8DA51"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="807FD089-37A4-8F3E-6727-8969AA182454" name="QUARTOS_PK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>25C5384E-C4DF-D9BB-DA02-A38C67225BB4</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A965EAD-F587-7AF5-D7EC-E733FC7C2C27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFAEA564-E106-14FF-89DE-15D38F54ED92" name="QUARTOS__IDX">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>144F6521-4413-E9A6-E434-335A3C1366D0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="CA79D19B-DF4C-257F-2ADF-8451461C7568"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83DB25B0-F5DE-830E-0EC6-86D833145BD6" name="QUARTOS_HOSPEDAGENS_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<generatorID>144F6521-4413-E9A6-E434-335A3C1366D0</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA79D19B-DF4C-257F-2ADF-8451461C7568"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

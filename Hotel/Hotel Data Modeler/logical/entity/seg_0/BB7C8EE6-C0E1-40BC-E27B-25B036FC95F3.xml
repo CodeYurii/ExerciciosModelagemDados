@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB7C8EE6-C0E1-40BC-E27B-25B036FC95F3" name="VENDAS">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:12:55 UTC</createdTime>
+<comment><![CDATA[Esta entidade representa as vendas de produtos ou serviços realizadas aos hóspedes pelo hotel.]]></comment>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_venda" id="26CBA6B3-8D92-F4A3-2F7B-8BB09B2DAD05">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:13:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Identificador único para cada venda.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_venda" id="84CFF1DD-8FA0-20F0-3792-9348584E310B">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:13:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor total da venda.]]></commentInRDBMS>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,2,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_hospede" id="81E6E726-F1C8-C4C4-41C9-D4C8F83A6BDA">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:39:58 UTC</createdTime>
+<generatorID>A122493D-E482-6660-9455-DDFCAC579C88</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3B772FFD-0FBA-6FF1-8A6D-7EE282901D7D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_funcionario" id="D0F42CFA-429D-3FC3-52EE-0A68E183311E">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:47:43 UTC</createdTime>
+<generatorID>09CF135F-CD38-BEC0-0BAE-B36D9845D76F</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>50BBF918-70E7-8062-A6EC-664C9D0C911C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E09ABE05-CAFA-987E-EE33-CD70A9C49220" name="VENDAS PK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 07:13:37 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="2D413F81-0EFE-5F0E-2B1C-13C3CBA28A1C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>26CBA6B3-8D92-F4A3-2F7B-8BB09B2DAD05</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

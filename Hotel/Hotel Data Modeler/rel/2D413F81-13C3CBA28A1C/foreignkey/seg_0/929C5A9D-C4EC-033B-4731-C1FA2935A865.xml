@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="929C5A9D-C4EC-033B-4731-C1FA2935A865" containerWithKeyObject="16386C0D-261D-F6D6-B096-59639E1DC566" localFKIndex="0651D66B-1CF3-0ACF-1C1E-442124363B5D" name="PRODUTOSSERVICOS_VENDAS_FK">
+<createdBy>Yuri</createdBy>
+<createdTime>2024-04-18 08:31:59 UTC</createdTime>
+<comment><![CDATA[ Este relacionamento indica que uma venda pode estar associada a um ou vários produtos ou serviços. Cada produto ou serviço pertence a uma única venda.]]></comment>
+<generatorID>B4F48217-CFDA-03C9-4186-DAEFB56A6BC5</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<referredTableLongName>VENDAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>407898F4-F926-2DBB-58AC-5DD20D26B5DF</referredTableID>
+<keyObject>3D7D3889-F920-A79B-C801-57583C118298</keyObject>
+<referredKeyID>3D7D3889-F920-A79B-C801-57583C118298</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_venda</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
