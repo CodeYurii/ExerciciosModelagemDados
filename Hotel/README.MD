@@ -7,3 +7,7 @@ A partir destes requisitos realizei:
 - Modelo Lógico
 - Modelo Relacional
 - Dicionário de Dados
+
+Ferramentas utilizadas: 
+- Oracle DataModeler
+- Oracle SQLDeveloper
